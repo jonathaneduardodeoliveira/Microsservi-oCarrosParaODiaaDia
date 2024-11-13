@@ -1,0 +1,35 @@
+# Arquivos e pastas de build
+/target/
+/out/
+
+# Configurações de IDEs
+/.idea/
+/*.iml
+*.class
+*.log
+*.project
+*.classpath
+*.settings/
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Dependências locais do Maven
+.mvn/
+**/mvnw
+**/mvnw.cmd
+**/.mvn/
+
+# Arquivos de logs
+*.log
+
+# Configurações do IntelliJ IDEA
+*.ipr
+*.iws
+.idea/
+
+# Arquivos do Eclipse
+.settings/
+.classpath
+.project
