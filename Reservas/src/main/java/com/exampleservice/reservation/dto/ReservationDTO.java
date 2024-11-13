@@ -1,29 +1,20 @@
-package com.exampleservice.reservation.model;
+package com.exampleservice.reservation.dto;
 
-import jakarta.persistence.*;
 import java.time.LocalDate;
 
-@Entity
-public class Reservation {
+public class ReservationDTO {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
-    @Column(nullable = false)
     private Long clientId;
-
-    @Column(nullable = false)
     private Long vehicleId;
-
-    @Column(nullable = false)
     private LocalDate reservationDate;
-
     private LocalDate returnDate;
 
-    public Reservation() {}
+    public ReservationDTO() {
+    }
 
-    public Reservation(Long clientId, Long vehicleId, LocalDate reservationDate, LocalDate returnDate) {
+    public ReservationDTO(Long id, Long clientId, Long vehicleId, LocalDate reservationDate, LocalDate returnDate) {
+        this.id = id;
         this.clientId = clientId;
         this.vehicleId = vehicleId;
         this.reservationDate = reservationDate;
